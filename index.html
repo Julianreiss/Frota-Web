@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2? family = Fredoka + One & family = Sarala & display = swap'">
+    <meta name="theme-color" content="#00b2b8">
+    <title>Frota Online</title>
+
+    <link rel="stylesheet" typeS="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/node_modules/bootstrap/js/dist/carousel.js">
+    <link rel="stylesheet" href="./assets/node_modules/font-awesome/fonts/node_modules">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="./assets/images/Logo.png" alt="logo Frota" width="500px">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="http://177.91.234.230:8888/nbn001/web/frontend/index.html">Frota Web</a>
+            <a class="cabecalho-menu-item" href="https://play.google.com/store/apps/details?id=com.womp.myapplication">App Frota</a>
+            <a class="cabecalho-menu-item">Suporte</a>
+            <a class="cabecalho-menu-item">Sobre</a>
+        </nav>
+    </header>
+
+    <div class="container-fluid conteudo-principal">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./assets/images/imagem_principal.png" alt="" width="110%" height="auto">
+            </div>
+
+            <div class="col-md-6">
+                <div class="container">
+                    <div class="d-flex justify-content-center h-100">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Sign In</h3>
+                                <div class="d-flex justify-content-end social_icon">
+                                    <span><i class="fab fa-facebook-square"></i></span>
+                                    <span><i class="fab fa-google-plus-square"></i></span>
+                                    <span><i class="fab fa-twitter-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <form class="formulario">
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control cpf validar" placeholder="Informe seu cpf">
+                                        <small class="text-white mt-1 mb-1">Nunca compartilharemos seu cpf com mais ninguém</small>
+
+                                    </div>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control senha validar" placeholder="password">
+                                    </div>
+                                    <div class="row align-items-center remember mt-2">
+                                        <input type="checkbox">Lembrar-me
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Login" class="btn text-white float-right login_btn senha validar">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-center links">
+                                    Não tem conta?<a href="#">Entrar</a>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#">Esqueceu sua senha?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--conteudo com imagens-->
+    <div class="container img-marketing">
+        <div class="row">
+            <div class="col col-md-6">
+                <h1 class="card-title">A qualquer hora e a qualquer momento!</h1>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+            <div class="col col-md-6">
+                <img class="card-img" src="./assets/images/desktop.png" alt="Card image">
+                <img src="http://mockup-web" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-6">
+
+            </div>
+            <div class="col col-md-6">
+
+            </div>
+            <div class="col col-md-6">
+
+            </div>
+        </div>
+        <!--divisao-->
+        <div class="row">
+            <div class="col col-md-6">
+
+            </div>
+            <div class="col col-md-6">
+
+            </div>
+            <div class="col col-md-6">
+
+            </div>
+        </div>
+    </div>
+
+    <!--FIM conteudo com imagens-->
+
+    <!--icones-->
+    <div class="container icones">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="./assets/images/Abastecimento_Frota.png" width="180px" height="auto">
+                <h3>Abastecimento</h3>
+                <p>Ao abastecer o usuário poderá informar a quantidade de litro de abastecido, a sua kilometragem atual, o valor do litro, número de requisições (caso possuir) e registro de imagens.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/images/Manutencao_frota.png" alt="" width="180px" height="auto">
+                <h3>Manutenção</h3>
+                <p>A manutenção informará a kilometragem atual, descreverá a peça com defeito, o valor da mesma, e o tipo de serviço realizado com anexos de comprovante de imagens.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/images/Checklist_Frota.png" alt="" width="180px" height="auto">
+                <h3>Checklist</h3>
+                <p>O Checklist deve ser feito diariamente ao receber o veículo, deve ser feita uma revisão geral de todos os itens, caso ocorra havaria em algum deve ser relatado imediatamente para que possam providenciar o devido reparo.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/images/Atualiza_veiculo.png" alt="" width="180px" height="auto">
+                <h3>Atualiza veículo</h3>
+                <p>Se um motorista tiver a permissão de utilizar vários veículos na empresa, ele obrigotoriamente tem que liberar o veículo antigo e scanear o QR Code do novo, para assim poder utulizar.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--conteudo-->
+    <section class="quote-container">
+
+        <div class="quote-slideshow">
+
+            <figure>
+                <i class="fas fa-check-circle"></i>
+                <h2>"Não se chega a lugares diferentes percorrendo os mesmos caminhos. " </h2>
+                <figcaption>
+
+                </figcaption>
+            </figure>
+            <figure>
+                <h2>“O que não se controla, não se gerencia. ”</h2>
+                <figcaption>
+
+                </figcaption>
+            </figure>
+            <figure>
+                <h2>"Carro conectado como inteligência em Gestão de Frota"</h2>
+
+            </figure>
+            <span class="prev" style="display:none;"><i class="fas fa-angle-left fa-2x"></i></span>
+            <span class="next" style="display:none;"><i class="fas fa-angle-right fa-2x"></i></span>
+        </div>
+    </section>
+    <!--conteudo meio-->
+
+    <div class="container listas">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Vantagens</h3>
+                <ul class="list-group list-group-flush">
+                    <li class=""> <span class="fas fa-clipboard"></span> Relatórios de painel avançado
+                    </li>
+                    <li class=""><span class="fas fa-gas-pump"></span> Monitoramento de carros abastecidos
+                    </li>
+                    <li class=""><span class="fas fa-map-marker-alt"></span> Rastreamento por GPS em tempo real</li>
+                    <li class=""> <span class="fas fa-shield-alt"></span> Segurança para seus veículos</li>
+
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <img id="img-lista" src="./assets/images/celular_frota.jpeg" alt="" width="70%" height="auto">
+            </div>
+        </div>
+    </div>
+
+    <!--CAROUSEL-->
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://picsum.photos/600/200" alt="Primeiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://picsum.photos/100/100" alt="Segundo Slide">
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </div>
+    <!--FIM CAROUSEL-->
+
+
+    <section class="conteudo-secundario">
+        <h3 class="conteudo-secudario-titulo">Parceiros</h3>
+        <div class="conteiner parceiros">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./assets/images/NBN_logo.png" alt="" width="200px" height="auto">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/images/womp.png" alt="" width="200px" height="auto">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/images/matrix.jpeg" alt="" width="200px" height="auto">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="">
+        <!-- Footer -->
+        <footer class="text-center text-white">
+            <!-- Grid container -->
+            <div class="container">
+                <!-- Section: CTA -->
+
+                <a href="#" title="" class="btn btn-primary">
+                    <span class="fab fa-google-play"></span> google play
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.4);">
+                © 2021 Copyright:
+                <a class="text-white" href="#">www.frota.online</a>
+            </div>
+
+
+        </footer>
+        <!-- Footer -->
+    </section>
+
+    <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/js/validaCPF.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+
+</body>
+
+</html>
