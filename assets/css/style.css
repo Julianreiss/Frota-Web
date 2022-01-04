@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
 
 html {
@@ -12,7 +13,6 @@ html {
 }
 
 body {
-    font-size: 100%;
     background: linear-gradient(68.15deg, #252223 35.80%, #252223 69.18%);
     scroll-behavior: smooth;
 }
@@ -31,19 +31,6 @@ body::-webkit-scrollbar {
     border-radius: 15px;
 }
 
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 24px;
-}
-
-.cabecalho-imagem {
-    height: 80px;
-    animation: go-back 1s;
-}
-
 @keyframes go-back {
     from {
         transform: translateX(100px);
@@ -53,24 +40,31 @@ body::-webkit-scrollbar {
     }
 }
 
-.cabecalho-menu {
-    display: flex;
-    gap: 32px;
+header nav {
+    margin-top: 1rem;
 }
 
-.cabecalho-menu-item {
-    font-family: 'Sarala', sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    font-size: 18px;
-    text-decoration: none;
-    border-bottom: 2px solid #00b2b8;
+header nav .container .collapse ul li .nav-link {
+    font-size: 20px;
+    margin-top: 0.3em;
 }
 
-.cabecalho-menu-item:hover {
-    transition: 0.5s;
+header nav .container .collapse ul li a:hover {
     color: #00b2b8;
-    cursor: pointer;
+    transition: 2s;
+    background-color: #00b2b8;
+}
+
+.navbar .container .collapse ul li .btn-nav {
+    background-color: #00b2b8;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar .container .collapse ul li .btn-nav:hover {
+    background-color: #1c1c1c;
+    border: 1px solid #00b2b8;
 }
 
 .conteudo {
@@ -89,27 +83,6 @@ body::-webkit-scrollbar {
 
 form h1 {
     color: white;
-}
-
-.conteudo-principal .btn-primary {
-    color: #1c1c1c;
-    background-color: #00b2b8;
-    font-size: 22px;
-    font-family: 'Fredoka One', sans-serif;
-    width: 50%;
-    float: right;
-}
-
-.conteudo-principal .btn-primary:hover {
-    background-color: white;
-    color: #1c1c1c;
-    transition: 0.5s;
-}
-
-.conteudo-principal-escrito {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
 }
 
 .conteudo-principal-escrito-titulo {
@@ -160,20 +133,27 @@ form h1 {
     height: auto;
 }
 
+
+/* CONTEUDO SECUNDARIO */
+
 .conteudo-secundario {
+    margin-top: 3em;
+}
+
+.conteudo-secundario .row {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 26px;
-    margin-top: 48px;
+    justify-content: center;
 }
 
 .conteudo-secudario-titulo {
-    border-top: 0.4px solid #757474ef;
+    text-align: center;
+    border-top: 0.4px solid #00b2b8;
     padding-top: 20px;
     font-family: 'Fredoka One', sans-serif;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 42px;
     color: #ffffff;
     margin-bottom: 16px;
 }
@@ -185,15 +165,20 @@ form h1 {
     color: #ffffff;
 }
 
-.rodape {
-    padding: 32px;
-    border-top: 0.4px solid #757474ef;
+.conteudo-secundario .row img {
+    -webkit-filter: grayscale(100%);
 }
 
-.rodape-imagem {
-    height: 48px;
-    display: block;
-    margin: 0 auto;
+.conteudo-secundario .row img:hover {
+    -webkit-filter: grayscale(0%);
+    transition: 0.5s;
+}
+
+
+/* FIM CONTEUDO SECUNDARIO */
+
+.icones {
+    margin-top: 3rem;
 }
 
 .icones h3 {
@@ -208,7 +193,7 @@ form h1 {
     color: white;
     font-size: 19px;
     text-align: left;
-    line-height: 1.8em;
+    line-height: 1.4em;
     letter-spacing: 1px;
 }
 
@@ -269,7 +254,6 @@ section footer .container a span {
 
 .listas ul {
     margin-top: 5rem;
-    position: absolute;
 }
 
 .listas ul li {
@@ -285,6 +269,7 @@ section footer .container a span {
 
 .listas ul span {
     color: #00b2b8;
+    font-size: 40px;
 }
 
 .listas h3 {
@@ -325,9 +310,19 @@ section footer .container a span {
     margin-top: 5em;
 }
 
-#carouselExampleControls {
-    margin-top: 4rem;
+.container-carousel .carousel {
+    margin: auto;
+    width: 60%;
+    height: auto;
+    display: flex;
 }
+
+.container-carousel img {
+    width: 100%;
+    height: auto;
+}
+
+#carouselExampleControls {}
 
 
 /*=======================LOGIN======================*/
@@ -415,9 +410,7 @@ input:focus {
 
 /*============= IMG CONTENTS/*============= */
 
-.img-marketing {
-    margin-bottom: 6em;
-}
+.img-marketing {}
 
 .img-marketing h1 {
     text-align: left;
@@ -441,3 +434,117 @@ input:focus {
 .error-text {
     color: red;
 }
+
+.img-marketing a {
+    font-size: 20px;
+    color: white;
+    background-color: #00b2b8;
+    padding: 6px;
+    width: 250px;
+    height: auto;
+}
+
+.img-marketing a:hover {
+    transition: 0.5s;
+    background: #1c1c1c;
+    color: #00b2b8;
+}
+
+footer .btn-primary {
+    margin: auto;
+    color: white;
+    background-color: #1c1c1c;
+    border: none;
+    padding: 10px;
+}
+
+footer .btn-primary:hover {
+    color: #1c1c1c;
+    background-color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+footer p,
+h6 {
+    color: #1c1c1c;
+}
+
+footer .fw-bold {
+    color: #1c1c1c;
+}
+
+footer {
+    background-color: #00b2b8;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+.maps-empresa iframe {
+    padding-top: 30px;
+    width: 100%;
+    height: 300px;
+}
+
+.maps-empresa h1 {
+    color: white;
+}
+
+
+/*Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+
+@media (max-width: 575.98px) {
+    .conteudo-principal .container {
+        margin-top: 3rem;
+    }
+    .conteudo-principal .container .fab {
+        font-size: 40px
+    }
+    .conteudo-principal .container h3 {
+        font-size: 20px;
+    }
+    .img-marketing h1 {
+        font-size: 60px;
+    }
+    .img-marketing img {
+        margin: 2em 0 2rem 0;
+    }
+    .icones {
+        margin-top: 1rem;
+    }
+    .icones img {
+        margin-left: 5rem;
+        width: 150px;
+    }
+    .icones h3 {
+        text-align: center;
+    }
+    .icones .col-md-3 {
+        margin-top: 1rem;
+    }
+    .listas .col-md-6 {
+        margin-top: 2rem;
+    }
+    .listas img {
+        margin-top: 2em;
+        margin-left: 0.8em;
+        width: 100%;
+    }
+}
+
+
+/* Dispositivos small (telefones em modo paisagem, com menos de 768px)*/
+
+@media (max-width: 767.98px) {}
+
+
+/* Dispositivos médios (tablets com menos de 992px) */
+
+@media (max-width: 991.98px) {}
+
+
+/* Dispositivos large (desktops com menos de 1200px)*/
+
+@media (max-width: 1199.98px) {}
