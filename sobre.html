@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" typeS="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/node_modules/font-awesome/fonts/node_modules">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -35,7 +35,7 @@
                             <a class="nav-link" href="#">App Frota</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quem somos</a>
+                            <a class="nav-link" href="sobre.html">Quem somos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Suporte</a>
@@ -50,13 +50,42 @@
 
     </header>
 
+
     <!--******CONTEUDO AQUI ******-->
-    <section>
-        <div class="container">
+    <div class="container sobre_principal">
+        <div class="row">
+            <div class="col-md-6">
+                <canvas id='canv'></canvas>
+            </div>
 
+            <div class="col-md-6">
+                <h1>Olá, nós somos a My Frota Online</h1>
+                <p>A <span>Frota Online</span> é uma empresa focada no desenvolvimento de soluções de tecnologia da informação, tendo como diferencial a facilidade de uso de seus produtos.</p>
+                <p>Formada por especialistas de larga vivência nas áreas de gestão do conhecimento, arquitetura da informação, usabilidade e soluções web, sua equipe conta com profissionais especializados em <span>Javascript e PHP</span>, reconhecidos pelas
+                    comunidades de programadores de todo o mundo.</p>
+                <p>Além de todo o conhecimento específico, nossos serviços de gestão de frotas alinham os objetivos da sua organização com a facilidade de uso em ambiente web. Isso resulta em uma combinação sob medida para sua corporação, com os profissionais
+                    da sua empresa receberão a capacitação técnica necessária para gerenciar de maneira autônoma o projeto.
+
+                </p>
+            </div>
         </div>
-    </section>
 
+        <div class="row sobre_equipe">
+            <div class="col-md-7">
+                <img src="./assets/images/NBN equipe.jpeg" alt="equipe" width="100%" height="auto">
+            </div>
+            <div class="col-md-5">
+                <h1>Equipe NBN Norte Brasil Network</h1>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Jaime Freitas <span>CEO</span></li>
+                    <li class="list-group-item">Adenor <span>Diretor geral</span></li>
+                    <li class="list-group-item">John Kevin <span>Desenvolvedor</span> </li>
+                    <li class="list-group-item">Julian Reis <span>Desenvolvedor</span></li>
+                    <li class="list-group-item">Eder Canto <span>Desenvolvedor</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -138,6 +167,7 @@
             <script src="./assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
             <script src="./assets/node_modules/jquery/dist/jquery.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+            <script src="./assets/js/animation.js"></script>
 
 </body>
 

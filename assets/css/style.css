@@ -63,8 +63,9 @@ header nav .container .collapse ul li a:hover {
 }
 
 .navbar .container .collapse ul li .btn-nav:hover {
-    background-color: #1c1c1c;
-    border: 1px solid #00b2b8;
+    background-color: black;
+    border: 1px solid white;
+    transition: 0.5s;
 }
 
 .conteudo {
@@ -141,21 +142,25 @@ form h1 {
 }
 
 .conteudo-secundario .row {
-    margin-top: 4rem;
-    margin-bottom: 5rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
 }
 
 .conteudo-secudario-titulo {
     text-align: center;
-    border-top: 0.4px solid #00b2b8;
-    padding-top: 20px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     font-family: 'Fredoka One', sans-serif;
     font-weight: 400;
-    font-size: 42px;
+    font-size: 36px;
     color: #ffffff;
     margin-bottom: 16px;
+    background-color: rgba(0, 178, 184, 0.1);
+}
+
+.conteudo-secudario-titulo span {
+    font-weight: bold;
 }
 
 .conteudo-secundario-paragrafo {
@@ -176,6 +181,46 @@ form h1 {
 
 
 /* FIM CONTEUDO SECUNDARIO */
+
+
+/* APELO */
+
+.apelo {
+    background-image: url("/assets/images/pessoa.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.apelo h2 {
+    color: white;
+}
+
+.apelo .btn-contact {
+    color: white;
+    padding: 15px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: black;
+}
+
+.apelo .btn-contact:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.apelo span {
+    font-weight: bold;
+}
+
+
+/* FIM APELO */
 
 .icones {
     margin-top: 3rem;
@@ -282,9 +327,8 @@ section footer .container a span {
 
 .quote-container {
     margin-top: 5rem;
-    background-color: #00b2b8;
+    background-color: rgba(0, 178, 184, 0.1);
     padding: 50px 0;
-    border-bottom: 12px solid #00b2b8;
 }
 
 .quote-slideshow h2 {
@@ -306,15 +350,16 @@ section footer .container a span {
     margin: auto;
 }
 
-.no-js .quote-slideshow figure+figure {
-    margin-top: 5em;
-}
-
 .container-carousel .carousel {
-    margin: auto;
+    margin: 2rem auto;
     width: 60%;
     height: auto;
     display: flex;
+}
+
+.container-carousel .carousel .carousel-control-prev-icon .sr-only {
+    color: #00b2b8;
+    background-color: red;
 }
 
 .container-carousel img {
@@ -447,7 +492,8 @@ input:focus {
 .img-marketing a:hover {
     transition: 0.5s;
     background: #1c1c1c;
-    color: #00b2b8;
+    color: white;
+    border: 1px solid white;
 }
 
 footer .btn-primary {
@@ -483,13 +529,75 @@ footer span {
 }
 
 .maps-empresa iframe {
-    padding-top: 30px;
+    padding-top: 15px;
     width: 100%;
     height: 300px;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
 }
 
 .maps-empresa h1 {
     color: white;
+}
+
+
+/* ************************ QUE SOMOS ************************ */
+
+.sobre_principal {
+    margin-top: 5rem;
+}
+
+.sobre_principal h1 {
+    color: #00b2b8;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.sobre_principal p {
+    color: white;
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 18px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+
+.sobre_principal span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.sobre_principal .sobre_equipe {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.sobre_principal .sobre_equipe img {
+    border-radius: 15px;
+}
+
+.sobre_principal .sobre_equipe h1 {
+    color: #00b2b8;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.sobre_principal .sobre_equipe ul li {
+    color: white;
+    font-size: 18px;
+    list-style: none;
+    border-bottom: 1px solid #00b2b8;
+    background: linear-gradient(68.15deg, #252223 35.80%, #252223 69.18%);
+}
+
+.sobre_principal .sobre_equipe ul li span {
+    color: #00b2b8;
+    float: right;
+}
+
+#canv {
+    width: 800px;
+    margin-top: 2rem;
 }
 
 
