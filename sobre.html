@@ -21,8 +21,8 @@
                     <img src="./assets/images/Logo.png" alt="250px" height="50px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+                <span class="navbar-toggler-icon"></span>
+                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -38,7 +38,21 @@
                             <a class="nav-link" href="sobre.html">Quem somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Suporte</a>
+                            <a class="nav-link" id="link_modal" href="#">Suporte</a>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p><i class="fas fa-envelope me-3"></i> suporte@nbntelecom.com.br </p>
+                                    <p><i class="fas fa-phone me-3"></i> + 55 92 98808-8488</p>
+                                    <p><i class="fas fa-phone me-3"></i> + 55 92 981339951</p>
+                                    <p><i class="fab fa-whatsapp me-3"></i> + 55 92 98808-8488</p>
+
+                                </div>
+
+                            </div>
                         </li>
                         <li class="nav-link">
                             <a href="" class="btn btn-nav">Solicitar demonstração</a>
@@ -47,7 +61,6 @@
                 </div>
             </div>
         </nav>
-
     </header>
 
 
@@ -166,8 +179,8 @@
 
             <script src="./assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
             <script src="./assets/node_modules/jquery/dist/jquery.min.js"></script>
+            <script src="./assets/js/main.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
-            <script src="./assets/js/animation.js"></script>
 
 </body>
 

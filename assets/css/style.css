@@ -49,6 +49,10 @@ header nav .container .collapse ul li .nav-link {
     margin-top: 0.3em;
 }
 
+#link_modal {
+    font-size: 20;
+}
+
 header nav .container .collapse ul li a:hover {
     color: #00b2b8;
     transition: 2s;
@@ -138,7 +142,7 @@ form h1 {
 /* CONTEUDO SECUNDARIO */
 
 .conteudo-secundario {
-    margin-top: 3em;
+    margin-top: 1em;
 }
 
 .conteudo-secundario .row {
@@ -186,11 +190,15 @@ form h1 {
 /* APELO */
 
 .apelo {
-    background-image: url("/assets/images/pessoa.jpeg");
+    background-image: url("/assets/images/hodometro.png");
+    /*min-height: 500px;  Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
     padding-top: 5rem;
     padding-bottom: 4rem;
 }
@@ -326,8 +334,13 @@ section footer .container a span {
 }
 
 .quote-container {
+    background-image: url("/assets/images/img_preto_branco.png");
+    /*min-height: 500px;  Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 5rem;
-    background-color: rgba(0, 178, 184, 0.1);
     padding: 50px 0;
 }
 
@@ -351,15 +364,10 @@ section footer .container a span {
 }
 
 .container-carousel .carousel {
-    margin: 2rem auto;
+    margin: 4rem auto;
     width: 60%;
     height: auto;
     display: flex;
-}
-
-.container-carousel .carousel .carousel-control-prev-icon .sr-only {
-    color: #00b2b8;
-    background-color: red;
 }
 
 .container-carousel img {
@@ -528,18 +536,6 @@ footer span {
     font-weight: bold;
 }
 
-.maps-empresa iframe {
-    padding-top: 15px;
-    width: 100%;
-    height: 300px;
-    margin-top: 4rem;
-    margin-bottom: 6rem;
-}
-
-.maps-empresa h1 {
-    color: white;
-}
-
 
 /* ************************ QUE SOMOS ************************ */
 
@@ -599,6 +595,81 @@ footer span {
     width: 800px;
     margin-top: 2rem;
 }
+
+
+/* INICIO MODAL */
+
+header nav .container .collapse ul li .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+header nav .container .collapse ul li .modal-content {
+    background-color: rgba(0, 178, 184, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 10% auto;
+    padding: 30px;
+    border: 1px solid #00b2b8;
+    width: 40%;
+    color: white;
+    /* Could be more or less, depending on screen size */
+}
+
+header nav .container .collapse ul li .modal-content .fas,
+.fab {
+    color: #00b2b8;
+    font-size: 25px;
+}
+
+
+/* The Close Button */
+
+.close {
+    padding-left: 10px;
+    color: #00b2b8;
+    margin-bottom: -2rem;
+    margin-left: 95%;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50px;
+    height: auto;
+}
+
+.close:hover {
+    color: White;
+    transition: 0.5s;
+}
+
+header nav .container .collapse ul li .close:hover,
+header nav .container .collapse ul li .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Fim DO MODAL */
 
 
 /*Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
