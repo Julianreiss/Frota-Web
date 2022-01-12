@@ -72,6 +72,19 @@ header nav .container .collapse ul li a:hover {
     transition: 0.5s;
 }
 
+.navbar .container img {
+    animation: go-back 2s alternate;
+}
+
+@keyframes go-back {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 .conteudo {
     margin-bottom: 35px;
     border-top: 0.2px solid #757474;
@@ -333,6 +346,69 @@ section footer .container a span {
     position: absolute;
 }
 
+.planos {
+    margin: 6rem 0 5rem 0;
+    text-align: center;
+}
+
+.planos-titulo {
+    margin: 5rem 0 2rem 0;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: rgba(0, 178, 184, 0.1);
+}
+
+.planos .card {
+    width: 200px;
+    height: auto;
+    margin: 0 1rem 0 1rem;
+    border-radius: 15px;
+    transition: transform 1s;
+}
+
+.planos .card:hover,
+.card:focus {
+    transform: translateX(5px) scale(1.2);
+}
+
+.planos .card h2 {
+    font-size: 50px;
+    text-align: center;
+    color: #00b2b8;
+    font-family: 'Fredoka One', sans-serif;
+}
+
+.planos .card h2 span {
+    font-size: 26px;
+    color: white;
+}
+
+.planos .card h5 {
+    margin-top: 2rem;
+    font-size: 40px;
+    color: white;
+}
+
+.planos .card h5 i {
+    margin-left: 10px;
+    color: #00b2b8;
+    font-size: 38px;
+}
+
+.planos .card #descricao {
+    margin-top: 2rem;
+    color: white;
+}
+
+.planos .card p {
+    color: white;
+    margin-top: 2rem;
+}
+
 .quote-container {
     background-image: url("/assets/images/img_preto_branco.png");
     /*min-height: 500px;  Create the parallax scrolling effect */
@@ -462,8 +538,6 @@ input:focus {
 
 
 /*============= IMG CONTENTS/*============= */
-
-.img-marketing {}
 
 .img-marketing h1 {
     text-align: left;
@@ -675,8 +749,11 @@ header nav .container .collapse ul li .close:focus {
 /*Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
 
 @media (max-width: 575.98px) {
+    .conteudo-principal {
+        margin-bottom: 4rem;
+    }
     .conteudo-principal .container {
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
     .conteudo-principal .container .fab {
         font-size: 40px
@@ -685,13 +762,28 @@ header nav .container .collapse ul li .close:focus {
         font-size: 20px;
     }
     .img-marketing h1 {
-        font-size: 60px;
+        font-size: 33px;
+        text-align: center;
     }
     .img-marketing img {
         margin: 2em 0 2rem 0;
     }
+    .img-marketing p {
+        width: 100%;
+        letter-spacing: 1.5px;
+        margin-top: 1rem;
+        text-align: left;
+        font-family: 'Fredoka One', sans-serif;
+    }
+    .img-marketing .btn-contact {
+        margin-top: 0.7rem;
+        width: 100%;
+    }
     .icones {
         margin-top: 1rem;
+    }
+    .icones p {
+        margin-top: 1.5rem;
     }
     .icones img {
         margin-left: 5rem;
@@ -699,9 +791,10 @@ header nav .container .collapse ul li .close:focus {
     }
     .icones h3 {
         text-align: center;
+        letter-spacing: 2px;
     }
     .icones .col-md-3 {
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
     .listas .col-md-6 {
         margin-top: 2rem;
@@ -711,19 +804,142 @@ header nav .container .collapse ul li .close:focus {
         margin-left: 0.8em;
         width: 100%;
     }
+    .planos .card {
+        width: 90%;
+    }
+    .planos-titulo {
+        width: 100%;
+    }
+    .container-carousel {
+        max-width: 100%;
+    }
+    .container-carousel .carousel {
+        margin: 4rem auto;
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    .container-carousel img {
+        width: 100%;
+        height: auto;
+    }
+    .conteudo-secundario h3 {
+        font-size: 26px;
+    }
+    .conteudo-secundario .row img {
+        margin-left: 4rem;
+    }
 }
 
 
 /* Dispositivos small (telefones em modo paisagem, com menos de 768px)*/
 
-@media (max-width: 767.98px) {}
+@media (min-width: 767.98px) {
+    .img-marketing h1 {
+        font-size: 30px;
+        text-align: left;
+    }
+    .img-marketing p {
+        margin-top: 0.5em;
+    }
+    .img-marketing .btn-contact {
+        margin-top: 1rem;
+    }
+    .icones {
+        margin-top: 4rem;
+    }
+    .icones h3 {
+        font-size: 20px;
+    }
+    .icones p {
+        font-size: 15px;
+    }
+    .icones img {
+        width: 130px;
+        height: auto;
+    }
+    .listas li {
+        font-size: 20px;
+    }
+    .listas li span {
+        font-size: 20px;
+    }
+    .listas img {
+        margin-top: 4rem;
+        margin-left: 4rem;
+    }
+}
 
 
 /* Dispositivos médios (tablets com menos de 992px) */
 
-@media (max-width: 991.98px) {}
+@media (min-width: 991.98px) {
+    .conteudo-principal .container .fab {
+        font-size: 60px
+    }
+    .img-marketing h1 {
+        text-align: left;
+        color: #00b2b8;
+        font-size: 80px;
+        font-weight: bold;
+    }
+    .img-marketing p {
+        text-align: left;
+        font-size: 22px;
+        color: white;
+    }
+    .img-marketing .row img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+}
 
 
 /* Dispositivos large (desktops com menos de 1200px)*/
 
-@media (max-width: 1199.98px) {}
+@media (min-width: 1199.98px) {
+    .icones h3 {
+        font-size: 30px;
+    }
+    .icones p {
+        font-size: 20px;
+    }
+    .listas .row h3 {
+        font-size: 60px;
+    }
+    .listas .row ul li span {
+        font-size: 40px;
+    }
+    .listas .row ul li {
+        font-size: 32px;
+    }
+    footer .btn-primary {
+        font-size: 22px;
+        margin: auto;
+        color: white;
+        background-color: #1c1c1c;
+        border: none;
+        padding: 20px;
+    }
+    footer .btn-primary:hover {
+        color: #1c1c1c;
+        background-color: white;
+        border: none;
+        transition: 0.5s;
+    }
+    footer p,
+    h6 {
+        color: #1c1c1c;
+        font-size: 18px;
+    }
+    footer .fw-bold {
+        color: #1c1c1c;
+    }
+    footer {
+        background-color: #00b2b8;
+    }
+    footer span {
+        font-weight: bold;
+    }
+}

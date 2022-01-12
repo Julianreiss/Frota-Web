@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
     <header>
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark static-top">
@@ -33,37 +34,30 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#">Frota Web</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">App Frota</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="sobre.html">Quem somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="link_modal" href=" <li class=" nav-item ">
-                            <a class="nav-link " href="# ">Frota Web</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link " href=" <li class="nav-item">
-                                <a class="nav-link" href="#">Frota Web</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">App Frota</a>
-                        </li>">App Frota</a>
-                        </li>">Suporte</a>
-                        <!-- The Modal -->
-                        <div id="myModal" class="modal">
+                            <a class="nav-link" id="link_modal" href="#">Suporte</a>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
 
-                            <!-- Modal content -->
-                            <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p><i class="fas fa-envelope me-3"></i> suporte@nbntelecom.com.br </p>
-                                <p><i class="fas fa-phone me-3"></i> + 55 92 98808-8488</p>
-                                <p><i class="fas fa-phone me-3"></i> + 55 92 981339951</p>
-                                <p><i class="fab fa-whatsapp me-3"></i> + 55 92 98808-8488</p>
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p><i class="fas fa-envelope me-3"></i> suporte@nbntelecom.com.br </p>
+                                    <p><i class="fas fa-phone me-3"></i> + 55 92 98808-8488</p>
+                                    <p><i class="fas fa-phone me-3"></i> + 55 92 981339951</p>
+                                    <p><i class="fab fa-whatsapp me-3"></i> + 55 92 98808-8488</p>
+
+                                </div>
 
                             </div>
-
-                        </div>
                         </li>
                         <li class="nav-link">
                             <a href="" class="btn btn-nav">Solicitar demonstração</a>
@@ -94,7 +88,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <form class="formulario">
+                                <form class="formulario" action="/" method="POST">
                                     <div class="input-group form-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -135,12 +129,12 @@
     <!--conteudo com imagens-->
     <div class="container img-marketing">
         <div class="row">
-            <div class="col col-md-6">
+            <div class="col-12 col-md-6">
                 <h1 class="card-title">A qualquer hora e a qualquer momento!</h1>
                 <p class="card-text">Gerencie custos com abastecimento, pneus, manutenções, infrações e muito mais. Centralize a sua gestão integrando todos os seus fornecedores em um único sistema! Saia das planilhas e assuma o controle da sua operação!</p>
                 <a href="" class="btn btn-contact">Solicitar demonstração</a>
             </div>
-            <div class="col col-md-6">
+            <div class="col-12 col-md-6">
                 <img class="card-img" src="./assets/images/not_cell.png" alt="Card image" width="100%" height="auto">
 
             </div>
@@ -156,17 +150,20 @@
                 <h3>Abastecimento</h3>
                 <p>Ao abastecer o usuário poderá informar a quantidade de litro de abastecido, a sua kilometragem atual, o valor do litro, número de requisições (caso possuir) e registro de imagens.</p>
             </div>
+
             <div class="col-md-3">
                 <img src="./assets/images/Manutencao_frota.png" alt="" width="180px" height="auto">
                 <h3>Manutenção</h3>
                 <p>A manutenção informará a kilometragem atual, descreverá a peça com defeito, o valor da mesma, e o tipo de serviço realizado com anexos de comprovante de imagens.
                 </p>
             </div>
+
             <div class="col-md-3">
                 <img src="./assets/images/Checklist_Frota.png" alt="" width="180px" height="auto">
                 <h3>Checklist</h3>
                 <p>O Checklist deve ser feito diariamente ao receber o veículo, deve ser feita uma revisão geral de todos os itens, caso ocorra havaria em algum deve ser relatado imediatamente para que possam providenciar o devido reparo.</p>
             </div>
+
             <div class="col-md-3">
                 <img src="./assets/images/Atualiza_veiculo.png" alt="" width="180px" height="auto">
                 <h3>Atualiza veículo</h3>
@@ -215,13 +212,48 @@
                     </li>
                     <li class=""><span class="fas fa-map-marker-alt"></span> Rastreamento por GPS em tempo real</li>
                     <li class=""> <span class="fas fa-shield-alt"></span> Segurança para seus veículos</li>
-
                 </ul>
             </div>
-
             <div class="col-md-6">
                 <img id="img-lista" src="./assets/images/celular_frota.jpeg" alt="" width="70%" height="auto">
             </div>
+        </div>
+    </div>
+
+    <!--container Planos-->
+    <h1 class="planos-titulo">Conheça os planos para sua empresa</h1>
+    <div class="container planos">
+        <div class="card-group">
+            <div class="card">
+                <h5 class="card-title"><i class="fas fa-cart-plus"></i> Frota Free</h5>
+                <p class="card-text">0 a 5 meses</p>
+                <div class="card-body">
+                    <h2> <span>R$</span> 100,00/mês</h2>
+                    <p id="descricao">Somente checklist e abastecimento</p>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <h5 class="card-title"><i class="fas fa-cart-plus"></i> Frota Free</h5>
+                <p class="card-text">0 a 5 meses</p>
+                <div class="card-body">
+                    <h2> <span>R$</span> 300,00/mês</h2>
+                    <p id="descricao">Somente checklist e abastecimento</p>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <h5 class="card-title"><i class="fas fa-cart-plus"></i> Frota Free</h5>
+                <p class="card-text">0 a 5 meses</p>
+                <div class="card-body">
+                    <h2> <span>R$</span> 400,00/mês</h2>
+                    <p id="descricao">Somente checklist e abastecimento</p>
+
+                </div>
+            </div>
+            <!--FIM container Planos-->
         </div>
     </div>
 
@@ -258,16 +290,16 @@
         <h3 class="conteudo-secudario-titulo">Quem utiliza o <span>Frota Online?</span> </h3>
 
         <div class="row">
-            <div class="col-md-2">
-                <img src="./assets/images/nbn telecom web.png" alt="nbn" width="200px" height="auto">
+            <div class="col-12 col-md-2">
+                <img src="./assets/images/nbn telecom branca fundo transparente.png" alt="nbn" width="200px" height="auto">
             </div>
-            <div class="col-md-2">
+            <div class="col-12 col-md-2">
                 <img src="./assets/images/womp.png" alt="womp" width="200px" height="auto">
             </div>
-            <div class="col-md-2">
+            <div class="col-12 col-md-2">
                 <img src="./assets/images/matrix.png" alt="matrix" width="200px" height="auto">
             </div>
-            <div class="col-md-2">
+            <div class="col-12 col-md-2">
                 <img src="./assets/images/womp channel.png" alt="womp channel " width="200px" height="auto">
             </div>
         </div>
