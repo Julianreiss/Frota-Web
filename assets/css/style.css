@@ -44,7 +44,7 @@ header nav {
     margin-top: 1rem;
 }
 
-header nav .container .collapse ul li .nav-link {
+header nav .container-fluid .collapse ul li .nav-link {
     font-size: 20px;
     margin-top: 0.3em;
 }
@@ -53,26 +53,26 @@ header nav .container .collapse ul li .nav-link {
     font-size: 20;
 }
 
-header nav .container .collapse ul li a:hover {
+header nav .container-fluid .collapse ul li a:hover {
     color: #00b2b8;
     transition: 2s;
     background-color: #00b2b8;
 }
 
-.navbar .container .collapse ul li .btn-nav {
+.navbar .container-fluid .collapse ul li .btn-nav {
     background-color: #00b2b8;
     border-radius: 20px;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
 }
 
-.navbar .container .collapse ul li .btn-nav:hover {
+.navbar .container-fluid .collapse ul li .btn-nav:hover {
     background-color: black;
     border: 1px solid white;
     transition: 0.5s;
 }
 
-.navbar .container img {
+.navbar .container-fluid img {
     animation: go-back 2s alternate;
 }
 
@@ -375,11 +375,20 @@ section footer .container a span {
     transform: translateX(5px) scale(1.2);
 }
 
+.planos .card #free {
+    background-image: linear-gradient(to right, green, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .planos .card h2 {
     font-size: 50px;
     text-align: center;
     color: #00b2b8;
     font-family: 'Fredoka One', sans-serif;
+    background-image: linear-gradient(to right, #00b2b8, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .planos .card h2 span {
@@ -396,7 +405,12 @@ section footer .container a span {
 .planos .card h5 i {
     margin-left: 10px;
     color: #00b2b8;
-    font-size: 38px;
+    font-size: 30px;
+}
+
+.planos .card #plus {
+    color: white;
+    font-size: 35px;
 }
 
 .planos .card #descricao {
@@ -405,6 +419,86 @@ section footer .container a span {
 }
 
 .planos .card p {
+    color: white;
+    margin-top: 2rem;
+}
+
+
+/* Planos 2 *************************/
+
+.planos_2 {
+    margin: 6rem 0 5rem 0;
+    text-align: center;
+}
+
+.planos_2-titulo {
+    margin: 5rem 0 2rem 0;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: rgba(0, 178, 184, 0.1);
+}
+
+.planos_2 .card {
+    width: 90%;
+    height: auto;
+    margin: 0 1rem 0 1rem;
+    border-radius: 15px;
+    transition: transform 1s;
+}
+
+.planos_2 .card:hover,
+.card:focus {
+    transform: translateX(5px) scale(1.2);
+}
+
+.planos_2 .card #free {
+    background-image: linear-gradient(to right, green, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.planos_2 .card h2 {
+    font-size: 25px;
+    text-align: center;
+    color: #00b2b8;
+    font-family: 'Fredoka One', sans-serif;
+    background-image: linear-gradient(to right, #00b2b8, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.planos_2 .card h2 span {
+    font-size: 26px;
+    color: white;
+}
+
+.planos_2 .card h5 {
+    margin-top: 2rem;
+    font-size: 30px;
+    color: white;
+}
+
+.planos_2 .card h5 i {
+    margin-left: 10px;
+    color: #00b2b8;
+    font-size: 25px;
+}
+
+.planos_2 .card #plus {
+    color: white;
+    font-size: 35px;
+}
+
+.planos_2 .card #descricao {
+    margin-top: 2rem;
+    color: white;
+}
+
+.planos_2 .card p {
     color: white;
     margin-top: 2rem;
 }
@@ -462,7 +556,7 @@ section footer .container a span {
 }
 
 .card {
-    height: 370px;
+    height: 410px;
     margin-top: auto;
     margin-bottom: auto;
     width: 400px;
@@ -541,9 +635,11 @@ input:focus {
 
 .img-marketing h1 {
     text-align: left;
-    color: #00b2b8;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
+    background-image: linear-gradient(to right, #00b2b8, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .img-marketing p {
@@ -673,7 +769,7 @@ footer span {
 
 /* INICIO MODAL */
 
-header nav .container .collapse ul li .modal {
+header nav .container-fluid .collapse ul li .modal {
     display: none;
     /* Hidden by default */
     position: fixed;
@@ -697,7 +793,7 @@ header nav .container .collapse ul li .modal {
 
 /* Modal Content/Box */
 
-header nav .container .collapse ul li .modal-content {
+header nav .container-fluid .collapse ul li .modal-content {
     background-color: rgba(0, 178, 184, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -709,7 +805,7 @@ header nav .container .collapse ul li .modal-content {
     /* Could be more or less, depending on screen size */
 }
 
-header nav .container .collapse ul li .modal-content .fas,
+header nav .container-fluid .collapse ul li .modal-content .fas,
 .fab {
     color: #00b2b8;
     font-size: 25px;
@@ -761,6 +857,9 @@ header nav .container .collapse ul li .close:focus {
     .conteudo-principal .container h3 {
         font-size: 20px;
     }
+    .img-marketing {
+        margin-top: 2rem;
+    }
     .img-marketing h1 {
         font-size: 33px;
         text-align: center;
@@ -803,6 +902,9 @@ header nav .container .collapse ul li .close:focus {
         margin-top: 2em;
         margin-left: 0.8em;
         width: 100%;
+    }
+    .listas ul li {
+        font-size: 20px;
     }
     .planos .card {
         width: 90%;
@@ -942,4 +1044,18 @@ header nav .container .collapse ul li .close:focus {
     footer span {
         font-weight: bold;
     }
+}
+
+
+/* ANIMAÇÕES */
+
+.container {
+    opacity: 0;
+    transform: translate3D(-50px, 0px, 0px);
+}
+
+.anime-init {
+    opacity: 1;
+    transform: translate3D(0px, 0px, 0px);
+    transition: .3s all ease-out;
 }

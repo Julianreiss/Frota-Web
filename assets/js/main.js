@@ -129,5 +129,35 @@ function myModal() {
             modal.style.display = "none";
         }
     }
+    console.log(modal);
 }
 myModal();
+
+function tableModal() {
+    var btnTableModal = document.getElementById("myTableModal")
+    var tableModal = document.getElementById('link_table_modal');
+
+    var span = document.getElementsByClassName("close")[0];
+
+    //clicar para abrir o modal
+    btnTableModal.onclick = () => {
+            tableModal.style.display = "block";
+        }
+        // Quando o usuário clicar em <span> (x), feche o modal
+    span.onclick = () => {
+            tableModal.style.display = "none";
+        }
+        // Quando o usuário clicar em qualquer lugar fora do modal, feche-o
+    span.onclick = (e) => {
+        if (event.target == tableModal) {
+            tableModal.style.display = "none"
+        }
+    }
+    window.onclick = function(e) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    console.log(modal);
+}
+tableModal();
